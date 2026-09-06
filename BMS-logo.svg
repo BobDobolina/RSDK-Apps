@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" role="img" aria-labelledby="title desc">
+  <title id="title">Bookmark Mega Suite logo</title>
+  <desc id="desc">Blue square with a white letter B and a subtle white outer glow.</desc>
+  <defs>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="2.2" result="blur"/>
+      <feFlood flood-color="#ffffff" flood-opacity="0.75" result="white"/>
+      <feComposite in="white" in2="blur" operator="in" result="softGlow"/>
+      <feMerge>
+        <feMergeNode in="softGlow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Transparent 128x128 canvas; logo occupies the central 96x96 area. -->
+  <rect x="16" y="16" width="96" height="96" rx="0" fill="#2388E8" filter="url(#glow)"/>
+  <text x="64" y="94"
+        text-anchor="middle"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="86"
+        font-weight="700"
+        fill="#ffffff">B</text>
+</svg>

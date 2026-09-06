@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RSDK Apps</title>
+  <style>
+    :root {
+      --blue: #2388e8;
+      --text: #202124;
+      --muted: #5f6368;
+      --page: #f7f8fa;
+      --card: #ffffff;
+      --border: #e1e4e8;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--text);
+      background: var(--page);
+    }
+
+    .container {
+      width: min(900px, calc(100% - 40px));
+      margin: 0 auto;
+      padding: 56px 0 70px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 42px;
+    }
+
+    .logo {
+      width: 96px;
+      height: 96px;
+      display: block;
+      margin: 0 auto 22px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(2.2rem, 5vw, 3.2rem);
+      line-height: 1.1;
+      letter-spacing: -0.03em;
+    }
+
+    .subtitle {
+      margin: 12px 0 0;
+      color: var(--muted);
+      font-size: 1.05rem;
+    }
+
+    .app-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 34px 38px;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+    }
+
+    .app-card h2 {
+      margin: 0 0 16px;
+      font-size: 1.8rem;
+      letter-spacing: -0.02em;
+    }
+
+    .description {
+      margin: 0;
+      color: #3c4043;
+      font-size: 1.05rem;
+      line-height: 1.7;
+    }
+
+    .details {
+      margin-top: 28px;
+      padding-top: 22px;
+      border-top: 1px solid var(--border);
+      display: grid;
+      gap: 12px;
+    }
+
+    .detail {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      font-size: 1rem;
+    }
+
+    .label {
+      font-weight: 700;
+    }
+
+    a {
+      color: var(--blue);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        width: min(100% - 24px, 900px);
+        padding-top: 32px;
+      }
+
+      .app-card {
+        padding: 26px 22px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <header>
+      <img class="logo" src="BMS-logo.svg" alt="Bookmark Mega Suite logo">
+      <h1>RSDK Apps</h1>
+      <p class="subtitle">Simple, useful software for everyday computing.</p>
+    </header>
+
+    <section class="app-card" aria-labelledby="bms-title">
+      <h2 id="bms-title">Bookmark Mega Suite</h2>
+
+      <p class="description">
+        Bookmark Mega Suite is a Chrome browser extension that gives you total
+        control over how you organize, customize, and access your bookmarks.
+        View your collection in a floating window or directly inside the Chrome
+        Side Panel. Personalize your bookmark tree with custom themes, clean up
+        clutter with built-in tools, and protect sensitive links behind a
+        private, password-protected folder.
+      </p>
+
+      <div class="details">
+        <div class="detail">
+          <span class="label">Cost:</span>
+          <span>$2.50</span>
+        </div>
+        <div class="detail">
+          <span class="label">Info and Support:</span>
+          <a href="mailto:rsdkapps4444@gmail.com">rsdkapps4444@gmail.com</a>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
